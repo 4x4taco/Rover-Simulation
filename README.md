@@ -23,3 +23,18 @@ A function was created that combined all of the previous functions into a single
 ### Movie py
 A module called movie.py was used to string together a set of images inported from a .csv file.  The images had been processed by the Process_Image function and are played out to test the code before trying to connect to the unity environment.   
 
+# Autonmous Navigation and Mapping
+I relied on help from the Project Walkthrough video to structure my code and to understand the details of application.  I used the supplied files Perception.py, Drive_rover.py, supporting_functions and Desicion.py while adding another one, maneuver.py.  To clearly define how changes were made I will walk through each of the files and describe the sections that were added or modified.  
+
+### Perception
+A majority of the code used the Rover-Notebook was copied into the perception file.  This file was resposible for transoforming the stream of images to information that could detect navigable terrain and rocks.  The RGB values were set to 160 for the Red, Green and Blue channels.  An additional function was added to make the Rover act more autonomously.  This function was rover_stuck, and its purpose was to deterimine if the rover was stuck and to start a counter if this was the case.  When the counter was above a user set value a reverse was set to True and the rover would reverse until a speed on -1 m/s was reach at which point the Flage would be cleared.  The value to which to count was found by trial and error.  I also tried implementing a time function to do this for me but ulitmately it was more strain on the cpu than just using a simple +1 incrementer.  The find rocks function was also added to the perception file.  this file was a RGB filter set to 90,90,40 respectively.  This color Threshold did an excellent job of finding rocks.  An additional snippet of code was added on line 88.  The purpose of the code was to enable the rover to perform a 180 if it sensed it was at a dead end.  On line 187 a `rock_map.any` statement was used to detect rocks.  Once triggered the program would store rock information in the rover class.
+
+### Desicion
+This file was only modified slightly.  I added a bias of +-10 to line 28.  This kept the rover near the left side of the wall.  I did this to try and help the rover from overlappig areas that it had previously covered and try to raise the fidelity of the simulation. 
+
+### Supporting Functions
+
+
+
+
+
