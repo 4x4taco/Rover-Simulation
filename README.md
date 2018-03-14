@@ -33,6 +33,9 @@ A majority of the code used the Rover-Notebook was copied into the perception fi
 This file was only modified slightly.  I added a bias of +-10 to line 28.  This kept the rover near the left side of the wall.  I did this to try and help the rover from overlappig areas that it had previously covered and try to raise the fidelity of the simulation. 
 
 ### Supporting Functions
+I don't believe that I made any changes to this file.  Its purpose was to convert data for the unity enviroment, construct output images and manage communications.
+
+### Manuever
 
 
 
