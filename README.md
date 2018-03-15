@@ -36,6 +36,11 @@ This file was only modified slightly.  I added a bias of +-10 to line 28.  This 
 I don't believe that I made any changes to this file.  Its purpose was to convert data for the unity enviroment, construct output images and manage communications.
 
 ### Manuever
+This file was added to support the manuevering operations of the Rover after a rock sample has been found.  The Program consists of simple desicion trees that allow the rover to apply throttle, brake and steering control in different steps as the rover approaches the rock sample.  I wanted the rover to approach the samples at orthogonal angles to prevent the rover from getting stuck on rough terrain existing near the side wall.  It does a pretty good job at doing this.  One this that was done to help was to lower the graphics setting and speed of the rover when approaching, because the rover searches for the stored coordinates of the rock sample.  
+
+### Drive Rover
+The Drive Rover file is the main file ran when simulating the Rover in the unity environment.  The other files discussed has been imported into drive rover to use.   
+
 
 
 
