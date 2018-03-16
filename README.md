@@ -5,7 +5,8 @@
 The purpose of this project is to program a virtual rover operating in a virtual unity environment supplied by Udacity.  The goal is  to map out the environment and locate rock samples while recording their location.  An additional requirement to this project is to pickup the samples and return them to the starting point in the map while optimizing the fidelity of the terrain mapped within the environment.  I choose to pick up the rock as my rover navigated the environment. 
 
 ## Notebook Analysis
-###Perspect Transform
+### Perspect Transform
+![Screenshot](perspective transform.png)
 The first major compnent of the Rover-Notebook analyzed was the Perspective Transform.  The transform relied on pre-built functions from Open CV modules.  The purpose of this function was to take a 1st person perspective view and transformt the coordinates to use a top down view of the landsacpe.  
 
 ### Color Thresholding
