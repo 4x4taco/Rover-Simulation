@@ -7,9 +7,10 @@ The purpose of this project is to program a virtual rover operating in a virtual
 ## Notebook Analysis
 ### Perspect Transform
 ![Screenshot](find rocks.png)
-![alt text](https://github.com/jojobilly/Rover-Simulation/find rocks.png)
 
-![Optional Text](../Rover-Simulation/find rocks.png)
+![alt text](https://github.com/jojobilly/Rover-Simulation/find%20rocks.png)
+
+![Optional Text](find%20rocks.png)
 The first major compnent of the Rover-Notebook analyzed was the Perspective Transform.  The transform relied on pre-built functions from Open CV modules.  The purpose of this function was to take a 1st person perspective view and transformt the coordinates to use a top down view of the landsacpe.  
 
 ### Color Thresholding
